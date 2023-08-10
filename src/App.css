@@ -1,0 +1,33 @@
+.navbar{
+    background-color: rgb(190, 10, 10);
+    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Miltonian Tattoo', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar h1{
+    font-size: 50px;
+    -webkit-text-stroke: 2px blue;
+}
+
+.img{
+    height: 135px;
+    width: 150px;
+    object-fit: contain;
+}
+
+.changePage{
+    width:100px ;
+}
+
+.btn-group > .btn{
+    flex:0 1 auto;
+}
+
+.button-show:hover{
+    color: white;
+}
+
+.button-show:hover .link{
+    color: white;
+}
