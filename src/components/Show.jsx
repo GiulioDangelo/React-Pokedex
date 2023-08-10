@@ -105,17 +105,17 @@ function Show() {
 				<div>
 					{/* disable the prev botton if the id is 1*/}
 					{parseInt(pokemonData.id) > 1 ? (
-						<button className="btn btn-outline-primary fs-4 my-3 mx-1">
-							<Link to={`/show/:${pokemonPrevName}`} className="text-decoration-none button-show">Prev</Link>
+						<button className="btn btn-outline-primary fs-4 my-3 mx-1 button-show">
+							<Link to={`/show/:${pokemonPrevName}`} className="text-decoration-none button-show link">Prev</Link>
 						</button>
 					) : (
-						<button disabled className="btn btn-outline-primary fs-4 my-3 mx-1">
+						<button disabled className="btn btn-outline-primary fs-4 my-3 mx-1 button-show">
 							Prev
 						</button>
 					)}
 
-					<button className="btn btn-outline-primary fs-4 my-3 mx-1">
-						<Link to={`/show/:${pokemonNextName}`} className="text-decoration-none button-show">Next</Link>
+					<button className="btn btn-outline-primary fs-4 my-3 mx-1 button-show">
+						<Link to={`/show/:${pokemonNextName}`} className="text-decoration-none link">Next</Link>
 					</button>
 				</div>
 			</div>
