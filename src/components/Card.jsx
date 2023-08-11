@@ -47,17 +47,18 @@ function Card({query}) {
 					>
 						<PokemonDetails pokemonName={pokemon.name} />
 						<div className="my-2">{pokemon.name}</div>
-						<button
-							type="button"
-							className="mb-1 btn btn-outline-primary button-show"
+
+						<Link
+							to={`/show/:${pokemon.name}`}
+							className="link text-decoration-none"
 						>
-							<Link
-								to={`/show/:${pokemon.name}`}
-								className="link text-decoration-none"
+							<button
+								type="button"
+								className="mb-1 btn btn-outline-primary button-show"
 							>
 								Details
-							</Link>
-						</button>
+							</button>
+						</Link>
 					</div>
 				))}
 
